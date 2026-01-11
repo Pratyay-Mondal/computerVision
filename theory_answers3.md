@@ -1,6 +1,6 @@
 ## 5. Latent Space Manipulation
 
-**How can you estimate directions in latent space that correspond to semantic attributes (e.g., “Blond_Hair” and "Eyeglasses")?**
+**How did we estimate directions in latent space that correspond to semantic attributes (e.g., “Blond_Hair” and "Eyeglasses")?**
 
 To estimate these directions, we rely on **vector arithmetic** under the assumption that semantic attributes are linearly separable in the latent space.
 
