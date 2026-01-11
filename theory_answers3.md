@@ -12,7 +12,7 @@ The standard method is the **Difference of Means**:
 4.  **Subtract** the means to find the attribute direction vector $v$:
     $$v_{attribute} = \mu_{positive} - \mu_{negative}$$
 
-To manipulate a new image, you encode it to get its latent vector $z$, add this direction vector scaled by a factor $\alpha$, and decode the result:
+To manipulate a new image, we encode it to get its latent vector $z$, add this direction vector scaled by a factor $\alpha$, and decode the result:
 $$z_{new} = z + \alpha \cdot v_{attribute}$$
 
-This pushes the image representation along the "Blond" or "Eyeglasses" axis, adding the feature during reconstruction.
+This pushes the image representation along the "Blond" or "Eyeglasses" axis, and adding the feature during reconstruction.
