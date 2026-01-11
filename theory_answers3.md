@@ -2,7 +2,7 @@
 
 **How did we estimate directions in latent space that correspond to semantic attributes (e.g., “Blond_Hair” and "Eyeglasses")?**
 
-To estimate these directions, we rely on **vector arithmetic** under the assumption that semantic attributes are linearly separable in the latent space.
+To estimate these directions, we rely on **vector arithmetic** under the assumption that semantic attributes are linearly separable in the latent spaces.
 
 The standard method is the **Differences of Means**:
 
@@ -15,4 +15,4 @@ The standard method is the **Differences of Means**:
 To manipulate a new image, we encoded it to get its latent vector $z$, added this direction vector scaled by a factor $\alpha$, and decode the result:
 $$z_{new} = z + \alpha \cdot v_{attribute}$$
 
-This pushes the image representation along the "Blond" or "Eyeglasses" axis, and adding the feature during reconstruction.
+This pushes the image representaton along the "Blond" or "Eyeglasses" axis, and adding the feature during reconstruction.
