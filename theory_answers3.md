@@ -16,3 +16,9 @@ To estimate these directions, we rely on vector arithmetic under the assumption 
 3. Compute the Mean (average) vector for both groups: μ positive and μ negative.
 
 4. Subtract the means to find the attribute direction vector v:
+   $$ v attribute = μ positive − μ negative $$
+​
+To manipulate a new image, you encode it to get its latent vector z, add this direction vector scaled by a factor α, and decode the result:
+   $$ z new​ = z + α * v attribute $$​
+
+This pushes the image representation along the "Blond" or "Eyeglasses" axis, adding the feature during reconstruction.
