@@ -4,7 +4,7 @@
 
 To estimate these directions, we rely on **vector arithmetic** under the assumption that semantic attributes are linearly separable in the latent space.
 
-The standard method is the **Difference of Means**:
+The standard method is the **Differences of Means**:
 
 1.  **Encode** a labeled dataset of images into latent vectors ($z$).
 2.  **Group** the vectors into two sets for a specific attribute: those *with* the feature (e.g., all "Blond") and those *without* (e.g., "Not Blond").
